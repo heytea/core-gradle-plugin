@@ -13,6 +13,27 @@ dependencies {
     implementation gradleApi()
 }
 
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.java.srcDirs
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.java
+                groupId 'android.heytea'
+                artifactId 'core-gradle-plugin'
+                version "1.0.0"
+                artifact(sourceJar) {
+                    classifier "sources"
+                }
+            }
+        }
+    }
+}
+
 
 
 
