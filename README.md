@@ -45,7 +45,7 @@ buildscript {
  3.1 plugins 引入方式
  ```groovy
 plugins {
-            id 'android.heytea.core'
+     id 'android.heytea.core'
 }
 ```
 3.2 apply plugin 引入方式
