@@ -37,7 +37,7 @@ buildscript {
  buildscript {
         dependencies {
             // 新增 core 插件依赖
-            classpath "com.github.fmtjava:GradlePluginSample:1.0.2"
+            classpath com.github.heytea:core-gradle-plugin:1.0.0"
         }
     }
 ```
