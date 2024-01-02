@@ -1,4 +1,4 @@
-# 配置Gradle源
+## 配置Gradle源
 Gradle7以上的版本，在project的settings.gradle添加依赖和配置。
 ```groovy
 pluginManagement {
@@ -32,7 +32,7 @@ buildscript {
         }
     }
 ```
-# 根目录 build.gradle 下，添加插件依赖
+## 根目录 build.gradle 下，添加插件依赖
 ```groovy
  buildscript {
         dependencies {
@@ -41,7 +41,7 @@ buildscript {
         }
     }
 ```
-# 在 app 的 build.gradle 中添加 plugin，可使用以下两种方式
+## 在 app 的 build.gradle 中添加 plugin，可使用以下两种方式
  3.1 plugins 引入方式
  ```groovy
 plugins {
@@ -52,7 +52,7 @@ plugins {
 ```groovy
 apply plugin: 'android.heytea.core'
 ```
-# 插件配置选项: 添加到app module 的build.gradle文件下 与android {}处于同一级
+## 插件配置选项: 添加到app module 的build.gradle文件下 与android {}处于同一级
 ```groovy
 heyteaCore {
     // 是否包含高德定位依赖，默认为true
