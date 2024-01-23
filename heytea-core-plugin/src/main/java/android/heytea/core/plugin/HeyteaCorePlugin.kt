@@ -12,8 +12,8 @@ class HeyteaCorePlugin : Plugin<Project> {
             val extension = project.extensions.findByName("heyteaCore") as? HeyteaCoreExtension
             extension?.let {
                 if (extension.includeCls) {
-                    project.dependencies.add("implementation", "com.tencentcloudapi.cls:tencentcloud-cls-sdk-android:1.0.10")
-                    project.dependencies.add("implementation", "com.tencentcloudapi.cls:cls-network-diagnosis-reporter-android:1.0.10")
+                    project.dependencies.add("implementation", "com.tencentcloudapi.cls:tencentcloud-cls-sdk-android:1.0.11")
+                    project.dependencies.add("implementation", "com.tencentcloudapi.cls:cls-network-diagnosis-reporter-android:1.0.11")
                 }
                 if (extension.includeCos) {
                     project.dependencies.add("implementation", "com.qcloud.cos:cos-android:5.9.+")
