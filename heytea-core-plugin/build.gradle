@@ -25,7 +25,7 @@ afterEvaluate {
                 from components.java
                 groupId 'android.heytea'
                 artifactId 'core-gradle-plugin'
-                version "1.0.1"
+                version "1.0.2"
                 artifact(sourceJar) {
                     classifier "sources"
                 }
