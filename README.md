@@ -40,7 +40,7 @@ allprojects {
  buildscript {
     dependencies {
         // 新增 core 插件依赖
-        classpath "com.github.heytea:core-gradle-plugin:1.0.1"
+        classpath "com.github.heytea:core-gradle-plugin:1.0.2"
     }
 }
 ```
