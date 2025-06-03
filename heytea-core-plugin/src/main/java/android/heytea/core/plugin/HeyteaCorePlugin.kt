@@ -37,7 +37,7 @@ class HeyteaCorePlugin : Plugin<Project> {
                     project.dependencies.add("implementation", "org.apache.commons:commons-compress:1.20")
                 }
                 if (extension.includeSLS) {
-                    project.dependencies.add("implementation", "com.aliyun.openservices:aliyun-log-android-sdk:2.6.9@aar")
+                    project.dependencies.add("implementation", "com.aliyun.openservices:aliyun-log-android-sdk:2.7.0@aar")
                 }
             }
         }
